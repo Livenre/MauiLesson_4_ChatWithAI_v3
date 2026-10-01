@@ -12,8 +12,7 @@ public partial class MainPage : ContentPage
 {
     private readonly AiService _aiService = new();
     private readonly IAudioRecorder _audioRecorder;
-    private const string GroqApiKey = "";
-    // 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
+    private const string GroqApiKey = "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";
     public ObservableCollection<ChatMessage> Messages { get; set; } = new();
 
     public List<AiModel> AvailableModels { get; set; } = new()

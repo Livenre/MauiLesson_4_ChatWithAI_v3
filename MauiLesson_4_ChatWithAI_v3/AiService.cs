@@ -7,8 +7,7 @@ namespace MauiLesson_4_ChatWithAI_v3;
 public class AiService
 {
     private readonly HttpClient _httpClient = new();
-    private const string ApiKey = "";
-    // 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
+    private const string ApiKey = "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";
     public async Task<string> AskAi(string prompt, string modelId = "openrouter/free")
     {
         _httpClient.DefaultRequestHeaders.Authorization =
